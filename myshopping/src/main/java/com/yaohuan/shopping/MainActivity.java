@@ -41,10 +41,10 @@ public class MainActivity extends ActionBarActivity {
         Tab homeTab = new Tab(R.string.home_name, R.drawable.selector_image_home, HomeFragment.class);
         Tab hotTab = new Tab(R.string.hot_name,R.drawable.selector_image_hot, HotFragment.class);
         Tab mineTab = new Tab(R.string.mine_name,R.drawable.selector_image_mine, MineFragment.class);
-        tabs.add(cartTab);
-        tabs.add(catagoryTab);
         tabs.add(homeTab);
         tabs.add(hotTab);
+        tabs.add(catagoryTab);
+        tabs.add(cartTab);
         tabs.add(mineTab);
         inflater = LayoutInflater.from(MainActivity.this);
         mTabHost = (FragmentTabHost) findViewById(R.id.tabhost);
